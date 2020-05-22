@@ -1,0 +1,16 @@
+<header>
+  <h4>WebSocket Chat</h4>
+</header>
+<main *ngIf="isConnected">
+  <form *ngIf="!username" #formName='ngForm' (ngSubmit)="sendName(formName.value)">
+    <input type="text" name="username" ngModel/>
+    <button type="submit">Send</button>
+  </form>
+  <div *ngFor="let message of messages">
+    <p>{{message}}</p>
+  </div>
+  <form *ngIf="username" #formChat='ngForm' (ngSubmit)="sendMessage(formChat.value)">
+    <input type="text" name="message" placeholder="Type message..." ngModel/>
+    <button type="submit">Send</button>
+  </form>
+</main>
