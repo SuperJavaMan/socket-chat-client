@@ -1,0 +1,41 @@
+form {
+  background-color: whitesmoke;
+  opacity: 0.95;
+  width: 475px;
+  height: 355px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.reg_wrapper {
+  padding-top: 50px;
+}
+.input_wrapper {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+input {
+  height: 33px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+label {
+ font-weight: bold;
+}
+button {
+  font-weight: bold;
+}
+.checkbox_wrapper {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  font-weight: bold;
+  align-items: center;
+}
+.checkbox_item {
+  width: 20px;
+}

@@ -1,0 +1,13 @@
+<div class="login_wrapper">
+  <form [formGroup]="form" (ngSubmit)="login(form.value)">
+    <div class="input_wrapper">
+      <h3>Login form</h3>
+      <label>Input Username</label>
+      <input type="text" name="username" formControlName="username"/>
+      <label>Input password</label>
+      <input type="text" name="password" formControlName="password"/>
+      <button type="submit">Submit</button>
+      <p>{{infoMessage}}</p>
+    </div>
+  </form>
+</div>

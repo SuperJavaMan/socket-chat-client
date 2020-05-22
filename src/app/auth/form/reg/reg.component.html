@@ -1,0 +1,17 @@
+<div class="reg_wrapper">
+  <form [formGroup]="form" (ngSubmit)="reg(form.value)">
+    <div class="input_wrapper">
+      <h3>Registration form</h3>
+      <label>Input Username</label>
+      <input type="text" name="username" formControlName="username"/>
+      <label>Input password</label>
+      <input type="text" name="password" formControlName="password"/>
+      <div class="checkbox_wrapper">
+        <input class="checkbox_item" type="checkbox" [(ngModel)]=asAdmin [ngModelOptions]="{standalone: true}">
+        <p>As Admin (For demo version)</p>
+      </div>
+      <button type="submit">Submit</button>
+      <p>{{infoMessage}}</p>
+    </div>
+  </form>
+</div>
